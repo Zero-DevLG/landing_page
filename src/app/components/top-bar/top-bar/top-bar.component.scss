@@ -1,0 +1,28 @@
+.top-bar
+{
+  position: relative;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid black;
+}
+
+.section
+{
+  position: relative;
+  width: 300px;
+  text-align: center;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  cursor: pointer;
+  transition: all ease-in 200ms;
+}
+
+.section:hover
+{
+  color: rgb(212, 62, 87);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(233, 136, 240), 0 0 30px rgb(245, 166, 255), 0 0 40px rgb(242, 137, 218), 0 0 50px rgb(228, 153, 255), 0 0 60px rgb(250, 21, 94);
+
+}

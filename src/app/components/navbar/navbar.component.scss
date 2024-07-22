@@ -1,0 +1,307 @@
+.navbar
+{
+  position: relative;
+  width: 100%;
+  height: 55%;
+  background-color: rgb(13, 0, 43);
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    padding: 0 20px;
+}
+
+// wave inicio
+
+.wave
+{
+  background-image: url(../../../assets/resources/img/wd1.svg);
+  position: absolute;
+  top: 330px;
+  left: 0;
+  width: 6000px;
+  height: 100%;
+  background-position: bottom;
+  overflow-x: hidden;
+}
+
+
+.wave2
+{
+  background-image: url(../../../assets/resources/img/wd2.svg);
+  position: absolute;
+  top: 330px;
+  left: 0;
+  width: 6000px;
+  height: 100%;
+  background-position: bottom;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+.wave3
+{
+  background-image: url(../../../assets/resources/img/wd3.svg);
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 6000px;
+  height: 100%;
+  background-position: bottom;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+
+
+.w1
+{
+  animation: w1 7s linear infinite;
+}
+
+.w2
+{
+  animation: w2 7s linear -.125s infinite, dezplasamiento 4s ease -.125s infinite;
+  opacity: 0.5;
+}
+
+.w3
+{
+  animation: w2 7s linear -.15s infinite, dezplasamiento 5s ease -.95s infinite;
+  opacity: 0.5;
+}
+
+@keyframes w1 {
+  0%
+  {
+    margin-left: 0;
+  }
+  100%
+  {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes w2 {
+  0%
+  {
+    margin-left: 0;
+  }
+  100%
+  {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes dezplasamiento {
+  0%, 100%
+  {
+    transform: translateY(-25px);
+  }
+
+  50%
+  {
+    transform: translateY(10px);
+    color: pink;
+  }
+
+}
+
+
+.upper-bar
+{
+  position: relative;
+  width: 100%;
+  height: 2vh;
+  background-color: rgb(97, 86, 245);
+}
+
+.level-1
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-section
+{
+  width: 800px;
+  height: 400px;
+  display: flex;
+  float: left;
+  justify-content: center;
+}
+
+.logo-img
+{
+  position: relative;
+  top: 70px;
+  width: 550px;
+  height: 230px;
+  float: right;
+}
+
+.text-section
+{
+  position: relative;
+  top: 20px;
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+
+}
+
+
+
+.btn_info
+{
+  position: relative;
+  width: 600px;
+  height: 100px;
+  top: 150px;
+  padding: 0px;
+  display: flex;
+}
+
+.btn-call
+{
+  position: relative;
+  height: 40px;
+  width: 200px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.btn-call:hover
+{
+
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff;
+
+}
+
+.btn-i
+{
+  position: relative;
+  height: 40px;
+  width: 200px;
+  margin-left: 5%;
+  background-color: #D2569A;
+  border: 2px solid #D2569A;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in 200ms;
+}
+
+.btn-i:hover{
+  background-color: #DB1B65 ;
+  border: 2px solid white;
+
+}
+
+.text
+{
+  position: relative;
+  top: 80px;
+}
+
+.text-2
+{
+  position: relative;
+  width: 900px;
+  top: 90px;
+  display: flex;
+}
+
+.title-1
+{
+
+  color: white;
+  font-size: 50px;
+}
+
+.title-2
+{
+
+  color: rgb(224, 68, 128);
+  font-size: 40px;
+}
+
+.title-3
+{
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+//
+
+
+
+
+
+
+.typing-container {
+  display: inline-block;
+  overflow: hidden; /* Oculta el texto que está fuera del contenedor */
+  white-space: nowrap; /* Mantiene el texto en una sola línea */
+  border-right: 10px solid rgb(255, 255, 255); /* Simula el cursor */
+  width: 0; /* Inicialmente el contenedor está colapsado */
+  animation:  typing 8s steps(40, end) ,
+              blink-caret 1.2s step-end infinite,
+              typing-delay 15s steps(40, end) infinite;
+  color: rgb(255, 255, 255);
+}
+
+.typing-text {
+  display: inline;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 90%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  10% {
+      border-color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes reset-width {
+  0%, 100% {
+      width: 0;
+  }
+  50% {
+      width: 90%;
+  }
+}
+
+
+@keyframes typing-delay {
+  0% {
+      width: 0;
+  }
+  20% {
+      width: 51%;
+  }
+  87.5% {
+      width: 51%;
+  }
+  100% {
+      width: 0;
+  }
+}

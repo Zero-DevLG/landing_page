@@ -1,0 +1,52 @@
+.services-section
+{
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-services
+{
+  position: relative;
+  width: 97%;
+  height: 40vh;
+  top: -50px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(96, 96, 96);
+  box-shadow: -8px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.header
+{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.header img
+{
+  position: relative;
+  width: 300px;
+  height: 100px;
+}
+
+.title
+{
+  position: relative;
+  margin-left: 10%;
+  top: 10px;
+  color: rgb(74, 74, 74);
+  text-align: center;
+}
+
+.important-text-1
+{
+  position: relative;
+  color: #E04480;
+}
